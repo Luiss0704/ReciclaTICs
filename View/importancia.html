@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla TICs - ¿Por qué reciclar?</title>
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <script src="../Scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="../Resources/logo.webp" alt="Logo" class="logo-icon">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <span class="menu-text">Menú</span>
+            <span class="menu-icon">☰</span>
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html">Inicio</a>
+            <a href="importancia.html" class="active">¿Por qué reciclar?</a>
+            <a href="participar.html">¿Cómo participar?</a>
+        </nav>
+    </header>
+
+    <!-- HERO DE IMPORTANCIA -->
+    <section class="hero-importance reveal">
+        <div class="hero-importance-content">
+            <span class="hero-badge">El problema que no vemos</span>
+            <h1>¿Por qué un cable no va a la basura común?</h1>
+            <p>Parece inofensivo, pero un cable viejo contiene materiales que pueden contaminar el suelo y el agua
+                durante décadas si no se manejan correctamente.</p>
+        </div>
+    </section>
+
+    <!-- IMAGEN FULL WIDTH (De lado a lado de la pantalla) -->
+    <div class="hero-full-width-image reveal">
+        <img src="../Resources/Imgcab.jpg" alt="Cables amontonados en desecho">
+    </div>
+
+    <!-- LO QUE HAY DENTRO DE UN CABLE -->
+    <section class="about-section reveal">
+        <div class="content-split">
+            <div class="split-text">
+                <h2>Lo que hay dentro de un cable</h2>
+                <p>Un cable común contiene materiales valiosos pero también aislantes de PVC y metales pesados. Si se
+                    tiran a la basura o se queman, desprenden toxinas nocivas, mientras que si se reciclan, sus
+                    componentes pueden reutilizarse casi al 100%.</p>
+
+                <div class="mini-features">
+                    <div class="mini-feature-item">
+                        <span class="mini-icon">⚡</span>
+                        <div>
+                            <strong>Cobre</strong>
+                            <p>Altamente conductor, valioso y reciclable de forma ilimitada sin perder calidad.</p>
+                        </div>
+                    </div>
+                    <div class="mini-feature-item">
+                        <span class="mini-icon">🛡️</span>
+                        <div>
+                            <strong>PVC y plásticos</strong>
+                            <p>Protegen el cable, pero pueden tardar cientos de años en degradarse en un relleno
+                                sanitario.</p>
+                        </div>
+                    </div>
+                    <div class="mini-feature-item">
+                        <span class="mini-icon">🔗</span>
+                        <div>
+                            <strong>Conectores</strong>
+                            <p>Contienen aleaciones metálicas que no deberían mezclarse con la basura común.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="split-image-card">
+                <img src="../Resources/cobre.webp" alt="Cobre y cables pelados">
+            </div>
+        </div>
+    </section>
+
+    <!-- EL RECORRIDO DE UN CABLE (Timeline Intercalado) -->
+    <section class="timeline-section reveal">
+        <h2>El recorrido de un cable</h2>
+        <p class="subtitle-center">Hay dos caminos posibles. Uno contamina, el otro recupera.</p>
+
+        <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+
+            <!-- Paso 1 (Izquierda) -->
+            <div class="timeline-row left reveal-left">
+                <div class="timeline-box">
+                    <h3>Se usa</h3>
+                    <p>El cable cumple su función durante meses o años: carga tu teléfono, conecta tu laptop, transmite
+                        datos.</p>
+                </div>
+                <div class="timeline-dot">1</div>
+                <div class="timeline-empty"></div>
+            </div>
+
+            <!-- Paso 2 (Derecha) -->
+            <div class="timeline-row right reveal-right">
+                <div class="timeline-empty"></div>
+                <div class="timeline-dot">2</div>
+                <div class="timeline-box">
+                    <h3>Se desgasta</h3>
+                    <p>Con el tiempo se dobla, se pela o deja de funcionar. Ya no sirve para lo que fue diseñado.</p>
+                </div>
+            </div>
+
+            <!-- Paso 3 (Izquierda) -->
+            <div class="timeline-row left reveal-left">
+                <div class="timeline-box">
+                    <h3>Llega el momento de decidir</h3>
+                    <p>Aquí está la bifurcación: ¿lo tiras a la basura común o lo depositas en el lugar correcto?</p>
+                </div>
+                <div class="timeline-dot">3</div>
+                <div class="timeline-empty"></div>
+            </div>
+
+            <!-- Paso X: Basura común (Derecha / Alerta Roja) -->
+            <div class="timeline-row right reveal-right">
+                <div class="timeline-empty"></div>
+                <div class="timeline-dot dot-red">X</div>
+                <div class="timeline-box box-alert">
+                    <h3 class="text-red">🚫 Basura común</h3>
+                    <p>Va al relleno sanitario. Sus materiales se mezclan con otros residuos, se vuelven irrecuperables
+                        y algunos pueden contaminar el suelo y el agua subterránea.</p>
+                </div>
+            </div>
+
+            <!-- Paso Check: Reciclaje (Izquierda / Éxito Verde) -->
+            <div class="timeline-row left reveal-left">
+                <div class="timeline-box box-success">
+                    <h3 class="text-green">✔ Reciclaje especializado</h3>
+                    <p>Sus materiales se separan y recuperan. El cobre vuelve a la industria, el plástico se procesa
+                        correctamente y se reduce la necesidad de extraer nuevas materias primas.</p>
+                </div>
+                <div class="timeline-dot dot-green">✓</div>
+                <div class="timeline-empty"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATOS QUE VALE LA PENA CONOCER -->
+    <section class="about-section reveal">
+        <h2>Datos que vale la pena conocer</h2>
+        <p style="text-align: center; margin-bottom: 40px; color: #555;">Un vistazo rápido al impacto real de la basura
+            electrónica en nuestra comunidad escolar.</p>
+
+        <div class="cards-grid-4">
+            <div class="info-card">
+                <div class="card-icon">📈</div>
+                <h3>Toneladas de basura tics</h3>
+                <p>Cada año se desechan miles de toneladas de cables en instituciones educativas sin un protocolo
+                    formal.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">♻️</div>
+                <h3>Recuperación de metales</h3>
+                <p>El 95% del cobre dentro de un cable en buen estado puede reciclarse infinitamente sin perder pureza.
+                </p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">🌍</div>
+                <h3>Menos huella ecológica</h3>
+                <p>Reciclar una tonelada de cobre ahorra la energía equivalente a consumir electricidad en decenas de
+                    hogares.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">💡</div>
+                <h3>Conciencia estudiantil</h3>
+                <p>Pequeñas acciones dentro del edificio de TICs transforman la cultura ambiental de toda la
+                    universidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-container reveal">
+        <div class="cta-box">
+            <h2>Ahora que lo sabes, ¿qué sigue?</h2>
+            <p>Reúne tus cables viejos, guárdalos en casa y depósitalos en nuestro bote especial en el edificio de TICs
+                cuando esté listo.</p>
+            <a href="participar.html" class="btn btn-blue">Quiero participar →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo-container"
+                    style="color: #ffffff; margin-bottom: 15px; display: inline-flex;">
+                    <img src="../Resources/logo.webp" alt="Logo" class="logo-icon">
+                </a>
+                <p>Una iniciativa estudiantil para darle una segunda vida a los cables electrónicos en el edificio de
+                    TICs.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="importancia.html">¿Por qué reciclar?</a></li>
+                    <li><a href="participar.html">Cómo participar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>El Proyecto</h4>
+                <p>📍 Edificio de TICs, Universidad Tecnológica de Tula-Tepeji, Campus Tula-Tepeji.</p>
+                <p style="margin-top: 10px;">⚡ Residuos electrónicos · cables y conectores.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>2026 Recicla TICs · Universidad Tecnológica de Tula-Tepeji</span>
+            <span>Proyecto ecológico y de tecnología para la comunidad estudiantil</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

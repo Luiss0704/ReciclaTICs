@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla TICs - Cómo participar</title>
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <script src="../Scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="../Resources/logo.webp" alt="Logo" class="logo-icon">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <span class="menu-text">Menú</span>
+            <span class="menu-icon">☰</span>
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html">Inicio</a>
+            <a href="importancia.html">¿Por qué reciclar?</a>
+            <a href="participar.html" class="active">¿Cómo participar?</a>
+        </nav>
+    </header>
+
+    <!-- HERO DE CÓMO PARTICIPAR -->
+    <section class="hero-importance reveal">
+        <div class="hero-importance-content">
+            <span class="hero-badge">El contenedor del bote</span>
+            <h1>¿Cómo participar?</h1>
+            <p>Reciclar tus cables viejos es más fácil de lo que crees. Solo necesitas saber qué traer, dónde y cuándo.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: UN BOTE DISEÑADO PARA ESTE PROPÓSITO -->
+    <section class="about-section reveal">
+        <!-- VERSIÓN ESCRITORIO (Estructura original de 2 columnas intacta) -->
+        <div class="content-split desktop-only">
+            <div class="split-image-card bote-image-card reveal-left container-with-badge">
+                <img src="../Resources/Prototipo.jpg" alt="Bote de cartón para reciclaje de cables">
+                <div class="image-overlay-badge">
+                    <span>♻️ Próximamente disponible en el edificio de TICs</span>
+                </div>
+            </div>
+            <div class="split-text">
+                <span class="hero-badge" style="margin-bottom: 10px;">Diseño y solución a medida</span>
+                <h2>Un bote diseñado para este propósito</h2>
+                <p>Hemos diseñado un depósito especial ecológico y resistente fabricado con cartón estructural
+                    reforzado, optimizado para soportar el flujo diario de la comunidad estudiantil. Cuenta con una
+                    ventana frontal transparente para visualizar el nivel de llenado, ranuras superiores seguras y una
+                    estructura modular pensada para facilitar la recolección limpia y ordenada de los cables en el
+                    edificio de TICs.</p>
+            </div>
+        </div>
+
+        <!-- VERSIÓN MÓVIL (Orden exacto: Título -> Imagen -> Tira verde -> Descripción) -->
+        <div class="mobile-bote-section mobile-only">
+            <div class="mobile-title-wrap">
+                <span class="hero-badge" style="margin-bottom: 10px;">Diseño y solución a medida</span>
+                <h2>Un bote diseñado para este propósito</h2>
+            </div>
+            <div class="mobile-image-wrap bote-image-card">
+                <img src="../Resources/Prototipo.jpg" alt="Bote de cartón para reciclaje de cables">
+            </div>
+            <div class="mobile-badge-wrap image-overlay-badge">
+                <span>♻️ Próximamente disponible en el edificio de TICs</span>
+            </div>
+            <div class="mobile-desc-wrap" style="text-align: left; margin-top: 15px;">
+                <p style="color: #555; line-height: 1.6;">Hemos diseñado un depósito especial ecológico y resistente
+                    fabricado con cartón estructural reforzado, optimizado para soportar el flujo diario de la comunidad
+                    estudiantil. Cuenta con una ventana frontal transparente para visualizar el nivel de llenado,
+                    ranuras superiores seguras y una estructura modular pensada para facilitar la recolección limpia y
+                    ordenada de los cables en el edificio de TICs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿QUÉ CABLES PUEDES DEPOSITAR? (Grid de 6 elementos con formato horizontal emoji | texto) -->
+    <section class="about-section reveal" style="background-color: rgba(0,0,0,0.015);">
+        <h2>¿Qué cables puedes depositar?</h2>
+        <p style="text-align: center; margin-bottom: 40px; color: #555;">Aceptamos una gran variedad de cables en desuso
+            de teléfonos, computadoras y redes, siempre limpios y sin restos de líquidos.</p>
+
+        <div class="cards-grid-6">
+            <div class="info-card-horizontal">
+                <div class="card-icon">🔌</div>
+                <div class="card-text">
+                    <h3>Cables de red UTP</h3>
+                    <p>Cables de ethernet, latiguillos de red y conectores RJ45 dañados o sobrantes.</p>
+                </div>
+            </div>
+            <div class="info-card-horizontal">
+                <div class="card-icon">🔋</div>
+                <div class="card-text">
+                    <h3>Cables USB y de alimentación</h3>
+                    <p>Cargadores viejos de celular, cables tipo C, micro USB y adaptadores de corriente.</p>
+                </div>
+            </div>
+            <div class="info-card-horizontal">
+                <div class="card-icon">💻</div>
+                <div class="card-text">
+                    <h3>Cables de computadora</h3>
+                    <p>Cables de poder para laptops, extensiones cortas y conectores VGA o HDMI.</p>
+                </div>
+            </div>
+            <div class="info-card-horizontal">
+                <div class="card-icon">🎧</div>
+                <div class="card-text">
+                    <h3>Audífonos y manos libres</h3>
+                    <p>Auriculares con cable averiados, diademas y cables auxiliares de audio (3.5mm).</p>
+                </div>
+            </div>
+            <div class="info-card-horizontal">
+                <div class="card-icon">📺</div>
+                <div class="card-text">
+                    <h3>Cables coaxiales</h3>
+                    <p>Cables de antena de televisión, cables de video y conexiones de audio antiguas.</p>
+                </div>
+            </div>
+            <div class="info-card-horizontal">
+                <div class="card-icon">⚡</div>
+                <div class="card-text">
+                    <h3>Otros cables electrónicos</h3>
+                    <p>Cualquier cable en desuso de aparatos electrónicos comunes y electrodomésticos chicos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert-box-wide">
+            <span>⚠️ Por favor deposita solo cables, adaptadores de corriente o accesorios electrónicos pequeños sin
+                baterías de litio dañadas.</span>
+        </div>
+    </section>
+
+    <!-- CÓMO HACERLO EN 3 PASOS (Línea con puntos encima y textos debajo, sin cards) -->
+    <section class="timeline-horizontal-section reveal">
+        <h2>Cómo hacerlo en 3 pasos</h2>
+        <p class="subtitle-center">Menos de un minuto para sumarte a la recolección de cables.</p>
+
+        <div class="steps-horizontal-wrapper">
+            <div class="step-horizontal-line"></div>
+
+            <div class="step-item reveal-stagger-1">
+                <div class="step-dot">1</div>
+                <div class="step-content">
+                    <h3>Junta tus cables</h3>
+                    <p>Reúne en casa o en tus espacios de estudio esos cables que ya no sirven o quedaron olvidados en
+                        un cajón.</p>
+                </div>
+            </div>
+
+            <div class="step-item reveal-stagger-2">
+                <div class="step-dot">2</div>
+                <div class="step-content">
+                    <h3>Tráelos al edificio TICs</h3>
+                    <p>Visita el edificio de TICs y localiza el bote de recolección especial para colocar tus residuos
+                        electrónicos.</p>
+                </div>
+            </div>
+
+            <div class="step-item reveal-stagger-3">
+                <div class="step-dot">3</div>
+                <div class="step-content">
+                    <h3>Depósitalos y listo</h3>
+                    <p>Coloca tus cables en el contenedor habilitado. De esta manera contribuyes directamente al
+                        reciclaje verde de la escuela.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿DÓNDE ESTÁ EL BOTE? -->
+    <section class="about-section reveal">
+        <div class="content-split">
+            <div class="split-text">
+                <h2>¿Dónde está el bote?</h2>
+                <p>El contenedor se instalará estratégicamente en el edificio de TICs, en una zona de fácil acceso para
+                    toda la comunidad estudiantil.</p>
+
+                <div class="mini-features" style="margin-top: 20px;">
+                    <div class="mini-feature-item">
+                        <span class="mini-icon">📍</span>
+                        <div>
+                            <strong>Edificio de TICs</strong>
+                            <p>Aún por definir.</p>
+                        </div>
+                    </div>
+                    <div class="mini-feature-item">
+                        <span class="mini-icon">🕒</span>
+                        <div>
+                            <strong>Horario de acceso</strong>
+                            <p>Disponible en horas de clases para toda la comunidad estudiantil de la carrera de TICs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-image-card reveal-right">
+                <img src="../Resources/cables-blancos.webp" alt="Cables blancos enredados">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-container reveal">
+        <div class="cta-box">
+            <h2>Cada cable cuenta</h2>
+            <p>Reducir la basura electrónica en el Edificio TICs es una tarea de todos y cada uno de nosotros. ¡Súmate a
+                esta iniciativa ecológica de la UTTT!</p>
+            <a href="index.html" class="btn btn-blue">Conoce el proyecto →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo-container"
+                    style="color: #ffffff; margin-bottom: 15px; display: inline-flex;">
+                    <img src="../Resources/logo.webp" alt="Logo" class="logo-icon">
+                </a>
+                <p>Una iniciativa estudiantil para darle una segunda vida a los cables electrónicos en el edificio de
+                    TICs.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="importancia.html">¿Por qué reciclar?</a></li>
+                    <li><a href="participar.html">Cómo participar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>El Proyecto</h4>
+                <p>📍 Edificio de TICs, Universidad Tecnológica de Tula-Tepeji, Campus Tula-Tepeji.</p>
+                <p style="margin-top: 10px;">⚡ Residuos electrónicos · cables y conectores.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>2026 Recicla TICs · Universidad Tecnológica de Tula-Tepeji</span>
+            <span>Proyecto ecológico y de tecnología para la comunidad estudiantil</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
