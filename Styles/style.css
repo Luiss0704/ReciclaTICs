@@ -1154,7 +1154,7 @@ footer {
     /* 3. Fondo de cables blancos SOLO para la sección "¿Dónde está el bote?" en móvil */
     .about-section:has(.reveal-right) {
         position: relative;
-        background-image: linear-gradient(rgba(237, 237, 233, 0.7), rgba(237, 237, 233, 0.7)), url('../Resources/cables-blancos.webp');
+        background-image: linear-gradient(rgba(237, 237, 233, 0.7), rgba(237, 237, 233, 0.7)), url('/Resources/cables-blancos.webp');
         background-size: cover;
         background-position: center;
         border-radius: 20px;
@@ -1218,7 +1218,7 @@ footer {
     /* Fondo de cables blancos más visible SOLO en la sección "¿Dónde está el bote?" en móvil */
     .about-section:has(.reveal-right) {
         position: relative;
-        background-image: linear-gradient(rgba(237, 237, 233, 0.7), rgba(237, 237, 233, 0.7)), url('../Resources/cables-blancos.webp');
+        background-image: linear-gradient(rgba(237, 237, 233, 0.7), rgba(237, 237, 233, 0.7)), url('/Resources/cables-blancos.webp');
         background-size: cover;
         background-position: center;
         border-radius: 20px;
