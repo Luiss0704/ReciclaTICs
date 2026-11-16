@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla TICs - Registrar Evidencia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Styles/formulario.css">
+    <script src="/Scripts/script.js" defer></script>
+    <script src="/Scripts/evidencia.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="/" class="logo-container">
+            <img src="/Resources/logo.webp" alt="Logo Recicla TICs" class="logo-icon">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <span class="menu-text">Menú</span>
+            <span class="menu-icon">☰</span>
+        </button>
+
+        <nav id="navMenu">
+            <a href="/">Inicio</a>
+            <a href="/View/importancia.html">¿Por qué reciclar?</a>
+            <a href="/View/participar.html">¿Cómo participar?</a>
+            <a href="/View/evidencia.html" class="active">Subir evidencia</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section reveal active">
+            <div class="form-header">
+                <span class="hero-badge">Iniciativa estudiantil · UTTT / TICs</span>
+                <h1>Registra tu evidencia</h1>
+                <p>Llena tus datos y adjunta una foto depositando tus cables en el bote de TICs para validar tu participación.</p>
+            </div>
+
+            <div class="form-card">
+                <form id="formularioEvidencia" novalidate>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="nombre">Nombre(s) <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user input-icon"></i>
+                                <input 
+                                    type="text" 
+                                    id="nombre" 
+                                    name="nombre" 
+                                    placeholder="Ej. Luis Antonio "
+                                    pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñÜü]{2,}(?:\s+[A-Za-zÁÉÍÓÚáéíóúÑñÜü]{2,})*$"
+                                    required>
+                            </div>
+                            <small class="error-msg" id="error-nombre"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-signature input-icon"></i>
+                                <input 
+                                    type="text" 
+                                    id="apellidos" 
+                                    name="apellidos" 
+                                    placeholder="Ej. Gómez Hernández"
+                                    pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñÜü]{2,}(?:\s+[A-Za-zÁÉÍÓÚáéíóúÑñÜü]{2,})+$"
+                                    required>
+                            </div>
+                            <small class="hint-text">Ingresa tus dos apellidos.</small>
+                            <small class="error-msg" id="error-apellidos"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="cuatrimestre">Cuatrimestre y grupo <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-layer-group input-icon"></i>
+                                <input 
+                                    type="text" 
+                                    id="cuatrimestre" 
+                                    name="cuatrimestre" 
+                                    placeholder="Ej. 1DSM - G2"
+                                    pattern="^(1[0-2]|[1-9])[A-Za-z]{2,6}\s*-\s*[Gg]\d{1,2}$"
+                                    required>
+                            </div>
+                            <small class="hint-text">Procura utilizar el formato del ejemplo</small>
+                            <small class="error-msg" id="error-cuatrimestre"></small>
+                        </div>
+
+                 <div class="form-group">
+                        <label for="matricula">Matrícula (8 números) <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-id-card input-icon"></i>
+                                <input 
+                                    type="text" 
+                                    id="matricula" 
+                                    name="matricula" 
+                                    placeholder="Ej. 25300449"
+                                    inputmode="numeric"
+                                    maxlength="8"
+                                    pattern="^\d{8}$"
+                                    required>
+                            </div>
+                            <small class="hint-text">Exactamente 8 dígitos numéricos.</small>
+                            <small class="error-msg" id="error-matricula"></small>
+                        </div>
+                    </div>
+
+                <div class="form-group">
+                    <label for="carrera">Carrera <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-graduation-cap input-icon"></i>
+                        <input 
+                            type="text" 
+                            id="carrera" 
+                            name="carrera" 
+                            placeholder="Ej. TSU Desarrollo de Software Multiplataforma"
+                            pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñÜü./\s-]{4,80}$"
+                            required>
+                    </div>
+                    <small class="hint-text">Escribe el nombre completo de tu carrera.</small>
+                    <small class="error-msg" id="error-carrera"></small>
+                </div>
+
+                    <div class="form-group">
+                        <label for="evidencia">Foto de evidencia <span class="required">*</span></label>
+                        <div class="file-drop-area" id="dropArea">
+                            <input 
+                                type="file" 
+                                id="evidencia" 
+                                name="evidencia" 
+                                accept="image/jpeg, image/png, image/webp" 
+                                required>
+                            
+                            <div class="file-placeholder" id="filePlaceholder">
+                                <div class="upload-icon">
+                                    <i class="fa-solid fa-camera"></i>
+                                </div>
+                                <p><strong>Haz clic para adjuntar una foto</strong></p>
+                                <span>JPG, PNG o WEBP (Máximo 5 MB)</span>
+                            </div>
+
+                            <div class="image-preview-container" id="previewContainer" hidden>
+                                <img id="imagePreview" src="" alt="Vista previa de la evidencia">
+                                <button type="button" class="btn-remove-img" id="removeImgBtn">
+                                    <i class="fa-solid fa-trash"></i> Cambiar foto
+                                </button>
+                            </div>
+                        </div>
+                        <small class="error-msg" id="error-evidencia"></small>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-green btn-submit">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar evidencia
+                        </button>
+                    </div>
+
+                    <div class="success-banner" id="successBanner" hidden>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>¡Evidencia enviada con éxito!</strong>
+                            <p>Tus datos y fotografía se han guardado correctamente en la nube.</p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="/" class="logo-container" style="color: #ffffff; margin-bottom: 15px; display: inline-flex;">
+                    <img src="/Resources/logo.webp" alt="Recicla TICs, ir al inicio" class="logo-icon">
+                </a>
+                <p>Una iniciativa estudiantil para darle una segunda vida a los cables electrónicos en el edificio de
+                    TICs.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/View/importancia.html">¿Por qué reciclar?</a></li>
+                    <li><a href="/View/participar.html">Cómo participar</a></li>
+                    <li><a href="/View/evidencia.html">Subir evidencia</a></li>
+                </ul> 
+            </div>
+            <div class="footer-col">
+                <h4>El Proyecto</h4>
+                <p>📍 Edificio de TICs, Universidad Tecnológica de Tula-Tepeji, Campus Tula-Tepeji.</p>
+                <p style="margin-top: 10px;">⚡ Residuos electrónicos · cables y conectores.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>2026 Recicla TICs · Universidad Tecnológica de Tula-Tepeji</span>
+            <span>
+                Contacto:
+                <a style="text-decoration: none; color: inherit;"
+                    href="mailto:luisfgns@gmail.com?cc=25300629@uttt.edu.mx&subject=Recicla%20TICs">luisfgns@gmail.com</a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
